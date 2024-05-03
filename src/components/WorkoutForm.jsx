@@ -23,7 +23,7 @@ const WorkoutForm = () => {
 
         const workout = {title, load, reps}
 
-        const response = await fetch('http://localhost:4000/api/workouts', {
+        const response = await fetch('https://workoutback.onrender.com/api/workouts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
