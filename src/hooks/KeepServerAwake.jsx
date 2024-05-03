@@ -5,7 +5,7 @@ const KeepServerAwake = () => {
   useEffect(() => {
     const keepAlive = async () => {
       try {
-        const response = await axios.get('https://your-backend-server.com/keep-alive');
+        const response = await axios.get('https://workoutback.onrender.com/keep-alive');
         console.log(response.data);
       } catch (error) {
         console.error('Error keeping server awake:', error);
